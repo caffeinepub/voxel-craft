@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        --background: 0.98 0.01 160;
+        --foreground: 0.15 0.02 160;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 160;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 160;
+        --primary: 0.205 0 0;
+        --primary-foreground: 0.985 0 0;
+        --secondary: 0.97 0 0;
+        --secondary-foreground: 0.205 0 0;
+        --muted: 0.97 0 0;
+        --muted-foreground: 0.556 0 0;
+        --accent: 0.97 0 0;
+        --accent-foreground: 0.205 0 0;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.922 0 0;
+        --input: 0.922 0 0;
+        --ring: 0.708 0 0;
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+        --sidebar: 0.985 0 0;
+        --sidebar-foreground: 0.145 0 0;
+        --sidebar-primary: 0.205 0 0;
+        --sidebar-primary-foreground: 0.985 0 0;
+        --sidebar-accent: 0.97 0 0;
+        --sidebar-accent-foreground: 0.205 0 0;
+        --sidebar-border: 0.922 0 0;
+        --sidebar-ring: 0.708 0 0;
+        
+        /* Islamic color palette */
+        --islamic-gold: 0.72 0.15 65;
+        --islamic-emerald: 0.55 0.18 165;
+        --islamic-teal: 0.45 0.12 195;
+    }
+
+    .dark {
+        --background: 0.15 0.02 160;
+        --foreground: 0.98 0.01 160;
+        --card: 0.18 0.02 160;
+        --card-foreground: 0.98 0.01 160;
+        --popover: 0.20 0.02 160;
+        --popover-foreground: 0.98 0.01 160;
+        --primary: 0.72 0.15 65;
+        --primary-foreground: 0.15 0.02 160;
+        --secondary: 0.25 0.02 160;
+        --secondary-foreground: 0.98 0.01 160;
+        --muted: 0.25 0.02 160;
+        --muted-foreground: 0.65 0.02 160;
+        --accent: 0.30 0.02 160;
+        --accent-foreground: 0.98 0.01 160;
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.98 0.01 160;
+        --border: 0.30 0.02 160;
+        --input: 0.30 0.02 160;
+        --ring: 0.55 0.18 165;
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+        --sidebar: 0.18 0.02 160;
+        --sidebar-foreground: 0.98 0.01 160;
+        --sidebar-primary: 0.72 0.15 65;
+        --sidebar-primary-foreground: 0.15 0.02 160;
+        --sidebar-accent: 0.25 0.02 160;
+        --sidebar-accent-foreground: 0.98 0.01 160;
+        --sidebar-border: 0.30 0.02 160;
+        --sidebar-ring: 0.55 0.18 165;
+        
+        /* Islamic color palette for dark mode */
+        --islamic-gold: 0.75 0.18 65;
+        --islamic-emerald: 0.60 0.20 165;
+        --islamic-teal: 0.50 0.15 195;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    .bg-islamic-pattern {
+        background-image: url('/assets/generated/islamic-pattern-bg.dim_1920x1080.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .font-arabic {
+        font-family: 'Traditional Arabic', 'Amiri', 'Scheherazade', serif;
+        font-size: 1.5em;
+        line-height: 2;
+    }
+}
+
+@layer utilities {
+    .text-islamic-gold {
+        color: oklch(var(--islamic-gold));
+    }
+    
+    .text-islamic-emerald {
+        color: oklch(var(--islamic-emerald));
+    }
+    
+    .text-islamic-teal {
+        color: oklch(var(--islamic-teal));
+    }
+    
+    .bg-islamic-gold {
+        background-color: oklch(var(--islamic-gold));
+    }
+    
+    .bg-islamic-emerald {
+        background-color: oklch(var(--islamic-emerald));
+    }
+    
+    .bg-islamic-teal {
+        background-color: oklch(var(--islamic-teal));
+    }
+    
+    .border-islamic-gold {
+        border-color: oklch(var(--islamic-gold));
+    }
+    
+    .border-islamic-emerald {
+        border-color: oklch(var(--islamic-emerald));
+    }
+    
+    .border-islamic-teal {
+        border-color: oklch(var(--islamic-teal));
+    }
+}

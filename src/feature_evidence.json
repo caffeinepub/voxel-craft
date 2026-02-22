@@ -1,0 +1,92 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-display-quran-text-with-surah-chapter-navigation-allowing-users-to-browse-and-read-all-114-surahs-with-arabic-text-and-translations",
+      "featureTitle": "Display Quran text with surah (chapter) navigation, allowing users to browse and read all 114 surahs with Arabic text and translations",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SurahContent.tsx",
+        "frontend/src/components/SurahList.tsx",
+        "frontend/src/pages/QuranPage.tsx"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-show-a-calendar-of-major-muslim-festival-dates-including-eid-al-fitr-eid-al-adha-ramadan-start-and-end-dates-and-other-significant-islamic-holidays-with-hijri-calendar-dates",
+      "featureTitle": "Show a calendar of major Muslim festival dates including Eid al-Fitr, Eid al-Adha, Ramadan start and end dates, and other significant Islamic holidays with Hijri calendar dates",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FestivalCard.tsx",
+        "frontend/src/pages/CalendarPage.tsx"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-provide-daily-prayer-times-azan-for-the-five-obligatory-prayers-fajr-dhuhr-asr-maghrib-isha-based-on-user-location-or-selected-city",
+      "featureTitle": "Provide daily prayer times (azan) for the five obligatory prayers (Fajr, Dhuhr, Asr, Maghrib, Isha) based on user location or selected city",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/LocationSelector.tsx",
+        "frontend/src/components/PrayerTimeDisplay.tsx",
+        "frontend/src/pages/PrayerTimesPage.tsx"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-cohesive-visual-theme-with-islamic-inspired-aesthetics-using-elegant-geometric-patterns-calligraphic-elements-and-a-warm-color-palette-gold-emerald-green-deep-teal-that-creates-a-reverent-and-peaceful-atmosphere-throughout-the-application",
+      "featureTitle": "Design a cohesive visual theme with Islamic-inspired aesthetics using elegant geometric patterns, calligraphic elements, and a warm color palette (gold, emerald green, deep teal) that creates a reverent and peaceful atmosphere throughout the application",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

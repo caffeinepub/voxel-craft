@@ -1,0 +1,99 @@
+{
+  "kind": "build_request",
+  "title": "Create Islamic app with Quran, festival dates, and prayer times",
+  "projectName": "Islamic Companion",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Display Quran text with surah (chapter) navigation, allowing users to browse and read all 114 surahs with Arabic text and translations",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "quran sarif"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can select and view any of the 114 surahs",
+        "Each surah displays Arabic text",
+        "Translation is provided alongside Arabic text",
+        "Navigation between surahs is intuitive"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Show a calendar of major Muslim festival dates including Eid al-Fitr, Eid al-Adha, Ramadan start and end dates, and other significant Islamic holidays with Hijri calendar dates",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "all date of muslims festival"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display upcoming Islamic holidays with both Gregorian and Hijri dates",
+        "Include at minimum: Eid al-Fitr, Eid al-Adha, Ramadan dates",
+        "Festival information is visible in a clear calendar or list format"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Provide daily prayer times (azan) for the five obligatory prayers (Fajr, Dhuhr, Asr, Maghrib, Isha) based on user location or selected city",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "azan"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display times for all five daily prayers",
+        "Allow users to select their location or city",
+        "Prayer times update based on the current date",
+        "Times are displayed in a clear, readable format"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Design a cohesive visual theme with Islamic-inspired aesthetics using elegant geometric patterns, calligraphic elements, and a warm color palette (gold, emerald green, deep teal) that creates a reverent and peaceful atmosphere throughout the application",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Consistent color scheme applied across all pages",
+        "Typography choices reflect elegance and readability",
+        "Layout includes subtle Islamic geometric or arabesque patterns",
+        "Overall design conveys respect and tranquility"
+      ]
+    }
+  ],
+  "constraints": [
+    "Quran text must be accurate and respectful",
+    "Prayer times must be calculated correctly based on geographic location",
+    "Islamic dates follow the Hijri calendar system"
+  ],
+  "nonGoals": [
+    "Audio recitation of Quran verses",
+    "Push notifications for prayer times",
+    "User authentication or personalization features",
+    "Social sharing or community features",
+    "Multiple translation options beyond one default translation"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Islamic geometric pattern background with gold and emerald tones, subtle and elegant (islamic-pattern-bg.dim_1920x1080.png)",
+      "Crescent moon and star icon in gold color for app branding (crescent-icon.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Islamic Companion Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Display Quran text with surah navigation, allowing users to browse and read all 114 surahs with Arabic text and translations",
+      "acceptanceCriteria": [
+        "Users can select and view any of the 114 surahs",
+        "Each surah displays Arabic text",
+        "Translation is provided alongside Arabic text",
+        "Navigation between surahs is intuitive"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/QuranPage.tsx",
+          "operation": "create",
+          "description": "Create the main Quran page component that displays the surah list and selected surah content. Fetch surah data from the backend using fetchQuranSurah method. Display Arabic text with translations in a readable format. Include navigation controls to browse between surahs. Integrate the Islamic design theme with geometric patterns."
+        },
+        {
+          "path": "frontend/src/components/SurahList.tsx",
+          "operation": "create",
+          "description": "Create a component that lists all 114 surahs with their names and numbers. Allow users to select a surah to view. Style with the Islamic-inspired theme using gold and emerald tones. Make the list scrollable and responsive."
+        },
+        {
+          "path": "frontend/src/components/SurahContent.tsx",
+          "operation": "create",
+          "description": "Create a component that displays the selected surah's Arabic text and translation. Format verses clearly with proper Arabic text rendering. Include surah metadata (name, number, revelation location). Add navigation buttons to move to previous/next surah."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the QuranPage into the application router. Add a route for /quran that renders the QuranPage component. Update navigation to include a link to the Quran section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Show a calendar of major Muslim festival dates including Eid al-Fitr, Eid al-Adha, Ramadan dates, and other significant Islamic holidays with Hijri calendar dates",
+      "acceptanceCriteria": [
+        "Display upcoming Islamic holidays with both Gregorian and Hijri dates",
+        "Include at minimum: Eid al-Fitr, Eid al-Adha, Ramadan dates",
+        "Festival information is visible in a clear calendar or list format"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CalendarPage.tsx",
+          "operation": "create",
+          "description": "Create the Islamic calendar page that displays major festival dates. Fetch calendar data from the backend using fetchIslamicCalendar method for the current Hijri year. Display festivals in a clear list or calendar format showing both Gregorian and Hijri dates. Include Eid al-Fitr, Eid al-Adha, Ramadan start/end, and other significant Islamic holidays. Apply the Islamic design theme."
+        },
+        {
+          "path": "frontend/src/components/FestivalCard.tsx",
+          "operation": "create",
+          "description": "Create a component that displays individual festival information including the festival name, Gregorian date, Hijri date, and brief description. Style with elegant cards using the gold and emerald color palette. Make cards responsive and visually appealing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the CalendarPage into the application router. Add a route for /calendar that renders the CalendarPage component. Update navigation to include a link to the Islamic Calendar section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Provide daily prayer times for the five obligatory prayers based on user location or selected city",
+      "acceptanceCriteria": [
+        "Display times for all five daily prayers",
+        "Allow users to select their location or city",
+        "Prayer times update based on the current date",
+        "Times are displayed in a clear, readable format"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/PrayerTimesPage.tsx",
+          "operation": "create",
+          "description": "Create the prayer times page that displays times for Fajr, Dhuhr, Asr, Maghrib, and Isha prayers. Fetch prayer times from the backend using fetchPrayerTimes method with user-selected city and country. Include a location selector (city/country input or dropdown). Display times in a clear, readable format with prayer names. Update times based on the current date. Apply the Islamic design theme with reverent styling."
+        },
+        {
+          "path": "frontend/src/components/LocationSelector.tsx",
+          "operation": "create",
+          "description": "Create a component that allows users to select their city and country for prayer time calculations. Include input fields or dropdowns for city and country selection. Provide a submit button to fetch prayer times. Style consistently with the Islamic theme."
+        },
+        {
+          "path": "frontend/src/components/PrayerTimeDisplay.tsx",
+          "operation": "create",
+          "description": "Create a component that displays the five daily prayer times in an elegant, readable format. Show each prayer name (Fajr, Dhuhr, Asr, Maghrib, Isha) with its corresponding time. Use clear typography and the Islamic color palette. Highlight the current or upcoming prayer."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the PrayerTimesPage into the application router. Add a route for /prayer-times that renders the PrayerTimesPage component. Update navigation to include a link to the Prayer Times section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Design a cohesive visual theme with Islamic-inspired aesthetics using elegant geometric patterns, calligraphic elements, and a warm color palette",
+      "acceptanceCriteria": [
+        "Consistent color scheme applied across all pages",
+        "Typography choices reflect elegance and readability",
+        "Layout includes subtle Islamic geometric or arabesque patterns",
+        "Overall design conveys respect and tranquility"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update global styles to establish the Islamic design theme. Define CSS custom properties for the color palette (gold, emerald green, deep teal). Set elegant typography choices for Arabic and English text. Add subtle background patterns or textures. Reference the generated background image at frontend/public/assets/generated/islamic-pattern-bg.dim_1920x1080.png for page backgrounds. Ensure the design conveys reverence and tranquility."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration to include the Islamic color palette (gold, emerald green, deep teal) as custom theme colors. Add custom font families suitable for Arabic and English text. Configure background image utilities for the Islamic geometric pattern. Define spacing and layout utilities that support the elegant design aesthetic."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "create",
+          "description": "Create a layout component that wraps all pages with consistent Islamic-inspired styling. Include a header with the app title and navigation links (Quran, Calendar, Prayer Times). Display the crescent moon and star icon at frontend/public/assets/generated/crescent-icon.dim_256x256.png in the header for branding. Apply the geometric pattern background. Include a footer with relevant information. Ensure responsive design across devices."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wrap the application routes with the Layout component to apply consistent styling across all pages. Ensure the Islamic design theme is present throughout the user experience."
+        }
+      ]
+    }
+  ]
+}

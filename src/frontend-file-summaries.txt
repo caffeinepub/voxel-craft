@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for home, Quran, calendar, and prayer times pages wrapped in a shared Layout component.",
+  "frontend/src/pages/HomePage.tsx": "Landing page displaying three main feature cards (Quran, Prayer Times, Islamic Calendar) with navigation links and Islamic-themed styling.",
+  "frontend/src/pages/QuranPage.tsx": "Quran reading page with surah list sidebar and content display area, managing surah selection state and fetching data from backend.",
+  "frontend/src/pages/CalendarPage.tsx": "Islamic calendar page displaying major festivals and holidays with year selector, fetching calendar data from backend API.",
+  "frontend/src/pages/PrayerTimesPage.tsx": "Prayer times page with location selector and display of five daily prayer times based on user's selected city and country.",
+  "frontend/src/components/Layout.tsx": "Shared layout component with header navigation, crescent moon branding, Islamic pattern background, and footer with attribution.",
+  "frontend/src/components/SurahList.tsx": "Scrollable list of all 114 Quran surahs with Arabic and English names, verse counts, and selection highlighting.",
+  "frontend/src/components/SurahContent.tsx": "Displays selected surah content with Arabic text, English translation, verse numbers, and navigation controls between surahs.",
+  "frontend/src/components/FestivalCard.tsx": "Card component displaying individual Islamic festival information including name, Gregorian date, Hijri date, and description.",
+  "frontend/src/components/LocationSelector.tsx": "Form component for users to input their city and country to fetch location-specific prayer times.",
+  "frontend/src/components/PrayerTimeDisplay.tsx": "Displays the five daily prayer times in an elegant format with current prayer highlighting and Hijri date information.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching Quran surahs, prayer times, and Islamic calendar data from the backend with proper TypeScript typing and data transformation including Festival interface definition.",
+  "frontend/src/index.css": "Global styles with Islamic color palette (gold, emerald, teal) in OKLCH format, Arabic font styling, and geometric pattern background utilities.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Islamic color tokens, Arabic font family, and custom design system matching the reverent aesthetic."
+}

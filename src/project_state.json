@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Islamic app featuring Quran text, Muslim festival dates, and azan (prayer times)",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Islamic geometric pattern background with gold and emerald tones, subtle and elegant (islamic-pattern-bg.dim_1920x1080.png)\n- Crescent moon and star icon in gold color for app branding (crescent-icon.dim_256x256.png)",
+  "existing_features": [
+    {
+      "id": "feature-display-quran-text-with-surah-chapter-navigation-allowing-users-to-browse-and-read-all-114-surahs-with-arabic-text-and-translations",
+      "title": "Display Quran text with surah (chapter) navigation, allowing users to browse and read all 114 surahs with Arabic text and translations",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-show-a-calendar-of-major-muslim-festival-dates-including-eid-al-fitr-eid-al-adha-ramadan-start-and-end-dates-and-other-significant-islamic-holidays-with-hijri-calendar-dates",
+      "title": "Show a calendar of major Muslim festival dates including Eid al-Fitr, Eid al-Adha, Ramadan start and end dates, and other significant Islamic holidays with Hijri calendar dates",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-provide-daily-prayer-times-azan-for-the-five-obligatory-prayers-fajr-dhuhr-asr-maghrib-isha-based-on-user-location-or-selected-city",
+      "title": "Provide daily prayer times (azan) for the five obligatory prayers (Fajr, Dhuhr, Asr, Maghrib, Isha) based on user location or selected city",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-with-islamic-inspired-aesthetics-using-elegant-geometric-patterns-calligraphic-elements-and-a-warm-color-palette-gold-emerald-green-deep-teal-that-creates-a-reverent-and-peaceful-atmosphere-throughout-the-application",
+      "title": "Design a cohesive visual theme with Islamic-inspired aesthetics using elegant geometric patterns, calligraphic elements, and a warm color palette (gold, emerald green, deep teal) that creates a reverent and peaceful atmosphere throughout the application",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display Quran text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Show Muslim festival dates",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Include azan (prayer times)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Islamic Companion",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
